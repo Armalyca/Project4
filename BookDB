@@ -7,16 +7,11 @@ typedef struct
   int availableBooks;
 }Book;
 
-scanf ==> stdin
-fscanf(fichier, "%s", &taVar);
+/*scanf ==> stdin
+fscanf(fichier, "%s", &taVar);*/
 
-title
-author
-code
-copies
-available copies
 
-Le neveu d'Amerique
+Le Neveu d'Amerique
 Luis Sepulveda
 BIO-001
 3
