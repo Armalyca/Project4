@@ -1,0 +1,55 @@
+typedef struct
+{
+  char* title;
+  char* author;
+  char* bookCode;
+  int totalNbBooks;
+  int availableBooks;
+}Book;
+
+scanf ==> stdin
+fscanf(fichier, "%s", &taVar);
+
+title
+author
+code
+copies
+available copies
+
+Le neveu d'Amerique
+Luis Sepulveda
+BIO-001
+3
+2
+
+Naruto - Tome 1
+Masashi Kishimoto
+MAN-001
+5
+1
+
+Book load_next_book(FILE* books_db)
+{
+  Book myBook;
+
+  fgets(myBook.title, 100, books_db);
+  fgets(myBook.author, 100, books_db);
+  fgets(myBook.bookCode, 8, books_db);
+  fscanf(books_db, "%d", &(myBook.totalNbBooks));
+  fscanf(books_db, "%d", &(myBook.availableBooks));
+  fgets(books_db);
+
+  return myBook;
+}
+
+
+int main()
+{
+  FILE* books_database = fopen("books.db", "r");
+  Book currentBook;
+
+  currentBook = load_next_book(books_database);
+  // currentBook is "Le neveu d'Amerique" by Luis Sepulveda
+  currentBook = load_next_book(books_database);
+  // currentBook is "Naruto - Tome 1" by Masashi Kishimoto
+}
