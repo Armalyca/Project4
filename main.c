@@ -2,9 +2,15 @@
 #include <stdlib.h>
 #include <string.h>
 
+struct Date {
+int day;
+int month;
+int year
+};
+
 struct BorrowBook {
  char BookCode[7];
- char date[10];
+struct Date date;
 };
 
 struct Member {
