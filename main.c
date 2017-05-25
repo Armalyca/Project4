@@ -30,6 +30,22 @@ struct Book {
 
 int main(int argc, char** argv)
 {
+  int ans;
+  system("cls");
+  printf("\t1. Access a read only access service menu\n\t2. Access an interactive menu\n");
+  scanf("%d", &ans);
 
-  return 0;
+  switch(ans)
+  {
+    case 1:
+      read_menu_librarian() //fct which display the read only menu
+      break;
+    case 2:
+      interact_menu_librarian(); //fct which display the interactive menu
+      break;
+    default:
+      printf("Warning: Enter 1 or 2");
+      break;
+  }
+ return 0;
 }
