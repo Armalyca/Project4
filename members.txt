@@ -1,62 +1,78 @@
+Member:
 Mathilde
 Kerdiles
 17 rue du pain aux raisins
 mat.kerdiles@free.fr
 Student
+
 Book1: 
 XXX-YYY
 dd/mm/yyyy
+
 Book2: 
 XXX-YYY
 dd/mm/yyyy
+
 Book3: 
 XXX-YYY
 dd/mm/yyyy
 
 
+Member:
 Zoe
 Niddam
 ile du pancake
 zoe.niddam@hotmail.fr
 Student
+
 Book1: 
 XXX-YYY
 dd/mm/yyyy
+
 Book2: 
 XXX-YYY
 dd/mm/yyyy
+
 Book3: 
 XXX-YYY
 dd/mm/yyyy
 
 
+Member:
 Exemple
 Instance
 fictive address
 exemple.instance@net.fr
 Teacher
+
 Book1: 
 XXX-YYY
 dd/mm/yyyy
+
 Book2: 
 XXX-YYY
 dd/mm/yyyy
+
 Book3: 
 XXX-YYY
 dd/mm/yyyy
 
 
+Member:
 John
 Doe
 nowhere near
 john.doe@net.fr
 Unknown
+
 Book1: 
 XXX-YYY
 dd/mm/yyyy
+
 Book2: 
 XXX-YYY
 dd/mm/yyyy
+
 Book3: 
 XXX-YYY
 dd/mm/yyyy
