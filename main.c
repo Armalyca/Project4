@@ -36,9 +36,11 @@ struct Book {
 
 int main(int argc, char** argv)
 {
-  int ans;
+  int ans, choice = 0;
+ while (choice == 0)
+ {
   system("cls");
-  printf("\t1. Access a read only access service menu\n\t2. Access an interactive menu\n");
+  printf("\t1. Access a read only access service menu\n\t2. Access an interactive menu\n\t3. Exit the program\n");
   scanf("%d", &ans);
 
   switch(ans)
@@ -49,9 +51,14 @@ int main(int argc, char** argv)
     case 2:
       interact_menu_librarian(); //fct which display the interactive menu
       break;
+   case 3:
+      choice = 1;
+      quit(); //exit the program
+      break;
     default:
       printf("Warning: Enter 1 or 2");
       break;
   }
+ }
  return 0;
 }
